@@ -16,7 +16,7 @@ export  class ElasticLogger extends BaseLogger{ // elastic loggera dedik ki sen 
 // bunun içerisindeki console log logged to mongo ile baselogger içerisindeki
 // loglar ezilir ve bu mongo ise mongo içerisindeki log kullanılır
 // eğer içerisine yazmazsak baseloggerda olan her şey mongo ve elasticde de uygulanır
-export  class MongoLogger extends MongoLogger{
+export  class MongoLogger extends BaseLogger{
     log(data){
         console.log("Logged to Mongo" + data)
     
